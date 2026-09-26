@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LanCast — Download</title>
+<meta name="description" content="Show your phone or PC screen on your TV, over your home Wi-Fi. Free, no account.">
+<style>
+  :root {
+    --bg: #f4f6f8; --card: #ffffff; --text: #1b2733; --muted: #5d6d7c; --line: #dfe5ea;
+    --accent: #1565c0; --accent-text: #ffffff; --soft: #e8f1fb; --warn: #fff4e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101418; --card: #1a2027; --text: #e6e8ea; --muted: #9aa7b3; --line: #2a333c;
+            --accent: #4fa3f7; --accent-text: #0b1520; --soft: #16273a; --warn: #3a2d17; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  h1 { font-size: 2rem; margin: 0; }
+  .lead { color: var(--muted); margin: 6px 0 24px; font-size: 1.1rem; }
+  .lang button { border: 1px solid var(--line); background: var(--card); color: var(--text);
+                 padding: 6px 12px; border-radius: 999px; font: inherit; font-size: .9rem; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .how { background: var(--soft); border-radius: 14px; padding: 16px 20px; margin-bottom: 24px; }
+  .how ol { margin: 6px 0 0; padding-left: 22px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+          display: flex; flex-direction: column; gap: 10px; }
+  .card h2 { margin: 0; font-size: 1.3rem; }
+  .card .for { color: var(--muted); margin: 0; font-size: .95rem; }
+  .btn { display: block; text-align: center; background: var(--accent); color: var(--accent-text);
+         text-decoration: none; font-weight: 600; padding: 14px; border-radius: 10px; font-size: 1.05rem; }
+  .card ol { margin: 0; padding-left: 20px; font-size: .95rem; }
+  .card li { margin: 4px 0; }
+  code, .url { background: var(--soft); padding: 2px 6px; border-radius: 6px; font-size: .95em; word-break: break-all; }
+  .url { display: block; padding: 8px 10px; font-weight: 600; text-align: center; }
+  .qr { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--muted); font-size: .85rem; }
+  .qr div { background: #fff; padding: 8px; border-radius: 8px; }
+  .note { background: var(--warn); border-radius: 10px; padding: 10px 12px; font-size: .9rem; }
+  section.help { margin-top: 32px; }
+  section.help h2 { font-size: 1.3rem; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: 8px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  footer { margin-top: 32px; color: var(--muted); font-size: .85rem; }
+  [data-lang="pt"] .en, [data-lang="en"] .pt { display: none; }
+  @media (max-width: 600px) { .qr { display: none; } }
+</style>
+</head>
+<body data-lang="en">
+<main>
+  <header>
+    <h1>📺 LanCast</h1>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="pt" aria-pressed="false">Português</button>
+    </div>
+  </header>
+  <p class="lead">
+    <span class="en">Show your phone or PC screen — with sound — on your TV or projector, over your home Wi-Fi. Free, no account, nothing goes to the internet.</span>
+    <span class="pt">Mostra o ecrã do telemóvel ou do PC — com som — na TV ou no projetor, pela rede Wi-Fi de casa. Grátis, sem conta, nada vai para a internet.</span>
+  </p>
+
+  <div class="how">
+    <strong class="en">How it works</strong><strong class="pt">Como funciona</strong>
+    <ol>
+      <li><span class="en">Install <b>LanCast TV</b> on the TV and open it.</span><span class="pt">Instala o <b>LanCast TV</b> na TV e abre-o.</span></li>
+      <li><span class="en">Install LanCast on your <b>phone</b> or <b>PC</b> (same Wi-Fi as the TV).</span><span class="pt">Instala o LanCast no <b>telemóvel</b> ou no <b>PC</b> (no mesmo Wi-Fi que a TV).</span></li>
+      <li><span class="en">Open it, tap your TV — done.</span><span class="pt">Abre-o, toca na tua TV — já está.</span></li>
+    </ol>
+  </div>
+
+  <div class="cards">
+    <!-- TV -->
+    <div class="card">
+      <h2><span class="en">1 · TV or projector</span><span class="pt">1 · TV ou projetor</span></h2>
+      <p class="for"><span class="en">Android TV, Google TV, TV boxes, Android projectors</span><span class="pt">Android TV, Google TV, boxes, projetores Android</span></p>
+      <ol>
+        <li><span class="en">On the TV, open the <b>Google Play Store</b> and install the free app <b>Downloader</b> (orange icon, by AFTVnews).</span>
+            <span class="pt">Na TV, abre a <b>Google Play Store</b> e instala a app gratuita <b>Downloader</b> (ícone laranja, da AFTVnews).</span></li>
+        <li><span class="en">Open Downloader and type this address with the remote:</span>
+            <span class="pt">Abre o Downloader e escreve este endereço com o comando:</span>
+            <span class="url">sangue3.github.io/LanCast-Install/tv</span></li>
+        <li><span class="en">Press <b>Go</b>, then <b>Install</b>. If the TV asks, allow Downloader to install apps.</span>
+            <span class="pt">Carrega em <b>Go</b> e depois em <b>Instalar</b>. Se a TV perguntar, deixa o Downloader instalar apps.</span></li>
+        <li><span class="en">Open <b>LanCast</b> from the TV's app list and leave it open.</span>
+            <span class="pt">Abre o <b>LanCast</b> na lista de apps da TV e deixa-o aberto.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/Sangue3/LanCast-Install/releases/latest/download/LanCast-TV.apk">
+        <span class="en">Download for TV (.apk)</span><span class="pt">Descarregar para TV (.apk)</span></a>
+    </div>
+
+    <!-- Phone -->
+    <div class="card">
+      <h2><span class="en">2 · Android phone</span><span class="pt">2 · Telemóvel Android</span></h2>
+      <p class="for"><span class="en">Android 10 or newer, phone or tablet</span><span class="pt">Android 10 ou mais recente, telemóvel ou tablet</span></p>
+      <ol>
+        <li><span class="en">On the phone, open this page and tap the button below (or scan the code).</span>
+            <span class="pt">No telemóvel, abre esta página e toca no botão abaixo (ou lê o código).</span></li>
+        <li><span class="en">Open the downloaded file. If the phone asks, allow your browser to <b>install unknown apps</b>, then tap <b>Install</b>.</span>
+            <span class="pt">Abre o ficheiro descarregado. Se o telemóvel perguntar, deixa o browser <b>instalar apps desconhecidas</b> e toca em <b>Instalar</b>.</span></li>
+        <li><span class="en">If a "Play Protect" warning appears, tap <b>More details → Install anyway</b>. It shows up for any app that isn't from the Play Store.</span>
+            <span class="pt">Se aparecer um aviso do "Play Protect", toca em <b>Mais detalhes → Instalar mesmo assim</b>. Aparece em qualquer app que não venha da Play Store.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/Sangue3/LanCast-Install/releases/latest/download/LanCast-Phone.apk">
+        <span class="en">Download for phone (.apk)</span><span class="pt">Descarregar para telemóvel (.apk)</span></a>
+      <div class="qr"><div id="qr-phone"></div>
+        <span class="en">Scan with the phone's camera</span><span class="pt">Lê com a câmara do telemóvel</span></div>
+    </div>
+
+    <!-- PC -->
+    <div class="card">
+      <h2><span class="en">3 · Windows PC</span><span class="pt">3 · PC Windows</span></h2>
+      <p class="for"><span class="en">Windows 10 or 11</span><span class="pt">Windows 10 ou 11</span></p>
+      <ol>
+        <li><span class="en">Download and open <b>LanCast-Windows.exe</b>.</span>
+            <span class="pt">Descarrega e abre o <b>LanCast-Windows.exe</b>.</span></li>
+        <li><span class="en">If Windows says "Windows protected your PC", click <b>More info → Run anyway</b>.</span>
+            <span class="pt">Se o Windows disser "O Windows protegeu o seu PC", clica em <b>Mais informações → Executar mesmo assim</b>.</span></li>
+        <li><span class="en">Answer <b>Yes</b> to "Install LanCast on this PC?". It adds LanCast to the Start menu and the Desktop.</span>
+            <span class="pt">Responde <b>Sim</b> a "Instalar o LanCast neste PC?". Fica no Menu Iniciar e no Ambiente de Trabalho.</span></li>
+        <li><span class="en">The first time, click <b>Install FFmpeg</b> in LanCast (a free tool it needs; about a minute).</span>
+            <span class="pt">Na primeira vez, clica em <b>Instalar o FFmpeg</b> no LanCast (uma ferramenta gratuita de que precisa; cerca de um minuto).</span></li>
+        <li><span class="en">If Windows asks about network access, click <b>Allow</b>.</span>
+            <span class="pt">Se o Windows perguntar sobre acesso à rede, clica em <b>Permitir</b>.</span></li>
+      </ol>
+      <a class="btn" href="https://github.com/Sangue3/LanCast-Install/releases/latest/download/LanCast-Windows.exe">
+        <span class="en">Download for Windows (.exe)</span><span class="pt">Descarregar para Windows (.exe)</span></a>
+    </div>
+  </div>
+
+  <section class="help">
+    <h2><span class="en">Something not working?</span><span class="pt">Alguma coisa não funciona?</span></h2>
+    <details><summary><span class="en">My TV doesn't show up in the list</span><span class="pt">A minha TV não aparece na lista</span></summary>
+      <p><span class="en">Make sure LanCast is <b>open on the TV screen</b> (not just installed) and that the TV and your phone/PC are on the <b>same Wi-Fi</b>. You can also type the address shown on the TV screen into "Connect by address".</span>
+         <span class="pt">Confirma que o LanCast está <b>aberto no ecrã da TV</b> (não basta estar instalado) e que a TV e o telemóvel/PC estão no <b>mesmo Wi-Fi</b>. Também podes escrever o endereço que aparece na TV em "Ligar por endereço".</span></p></details>
+    <details><summary><span class="en">The picture stutters</span><span class="pt">A imagem engasga</span></summary>
+      <p><span class="en">Pick <b>720p</b> in the quality options. 5 GHz Wi-Fi works best; the internet speed doesn't matter, everything stays inside your home network.</span>
+         <span class="pt">Escolhe <b>720p</b> nas opções de qualidade. O Wi-Fi de 5 GHz funciona melhor; a velocidade da internet não conta, tudo fica dentro da rede de casa.</span></p></details>
+    <details><summary><span class="en">Casting stops when the phone screen turns off</span><span class="pt">A transmissão pára quando o ecrã do telemóvel desliga</span></summary>
+      <p><span class="en">Android stops all screen sharing when the phone locks. LanCast keeps the screen on while casting; just don't press the power button. You can turn the phone's brightness all the way down.</span>
+         <span class="pt">O Android pára qualquer partilha de ecrã quando o telemóvel bloqueia. O LanCast mantém o ecrã ligado durante a transmissão; só não carregues no botão de ligar. Podes baixar o brilho do telemóvel ao mínimo.</span></p></details>
+    <details><summary><span class="en">Some apps show a black screen</span><span class="pt">Algumas apps aparecem pretas</span></summary>
+      <p><span class="en">Apps with protected video (Netflix, some banking apps…) block screen sharing on purpose. That's not something LanCast can change.</span>
+         <span class="pt">Apps com vídeo protegido (Netflix, algumas apps de bancos…) bloqueiam a partilha do ecrã de propósito. Não é algo que o LanCast possa mudar.</span></p></details>
+    <details><summary><span class="en">Changing the language</span><span class="pt">Mudar o idioma</span></summary>
+      <p><span class="en">LanCast follows your device's language (English or Portuguese). On the phone and PC you can also pick it in the app. The TV app follows the TV's language.</span>
+         <span class="pt">O LanCast segue o idioma do aparelho (inglês ou português). No telemóvel e no PC também o podes escolher na app. A app da TV segue o idioma da TV.</span></p></details>
+    <details><summary><span class="en">Updating or removing</span><span class="pt">Atualizar ou remover</span></summary>
+      <p><span class="en">To update, download and install again from this page; your settings are kept. On Windows, remove LanCast from <b>Settings → Apps → Installed apps</b>. On Android, uninstall it like any app.</span>
+         <span class="pt">Para atualizar, descarrega e instala outra vez a partir desta página; as definições mantêm-se. No Windows, remove o LanCast em <b>Definições → Aplicações → Aplicações instaladas</b>. No Android, desinstala como qualquer app.</span></p></details>
+  </section>
+
+  <footer>
+    <span class="en">All versions:</span><span class="pt">Todas as versões:</span>
+    <a href="https://github.com/Sangue3/LanCast-Install/releases">github.com/Sangue3/LanCast-Install/releases</a>
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  (function () {
+    var body = document.body;
+    function setLang(lang) {
+      body.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.lang button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.set === lang));
+      });
+      try { localStorage.setItem('lancast-lang', lang); } catch (e) {}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('lancast-lang'); } catch (e) {}
+    setLang(saved || ((navigator.language || '').toLowerCase().indexOf('pt') === 0 ? 'pt' : 'en'));
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.dataset.set); });
+    });
+    if (window.QRCode) {
+      new QRCode(document.getElementById('qr-phone'), {
+        text: 'https://sangue3.github.io/LanCast-Install/phone', width: 128, height: 128
+      });
+    }
+  })();
+</script>
+</body>
+</html>
