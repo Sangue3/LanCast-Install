@@ -1,7 +1,7 @@
 # LanCast
 
 **Show your phone or PC screen, with sound, on your TV or projector over your home Wi-Fi.**
-Free, no account, nothing goes to the internet.
+Free, no account. Casting works entirely inside your home network, with no internet needed; the apps only go online to check for and download their own updates.
 
 👉 **Easiest way: open [sangue3.github.io/LanCast-Install](https://sangue3.github.io/LanCast-Install/)** and follow the steps for your device.
 
@@ -42,7 +42,7 @@ To remove it: **Settings → Apps → Installed apps → LanCast → Uninstall**
 ## Português
 
 **Mostra o ecrã do telemóvel ou do PC, com som, na TV ou no projetor, pela rede Wi-Fi de casa.**
-Grátis, sem conta, nada vai para a internet.
+Grátis, sem conta. A transmissão acontece toda dentro da rede de casa, sem precisar de internet; as apps só vão à internet para procurar e descarregar as suas atualizações.
 
 👉 **O mais fácil: abre [sangue3.github.io/LanCast-Install](https://sangue3.github.io/LanCast-Install/)** (botão "Português" no topo) e segue os passos para o teu aparelho.
 
