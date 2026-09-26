@@ -35,7 +35,7 @@ To remove it: **Settings → Apps → Installed apps → LanCast → Uninstall**
 - Everything must be on the **same Wi-Fi**. 5 GHz Wi-Fi works best. If the picture stutters, choose **720p**.
 - Android stops screen sharing when the phone **locks**. LanCast keeps the screen on while casting, so just don't press the power button.
 - Apps with protected video (Netflix, some banking apps…) show a black screen. They block this on purpose.
-- To update, download and install again. Your settings are kept.
+- **Updates are automatic.** Whenever the apps have an internet connection, they check for a newer version when opened and install it themselves (never in the middle of a cast). On Android, allow LanCast to *install unknown apps* the first time it asks, then confirm each update. Versions older than 1.2.0 don't update themselves: download and install again once. Your settings are kept.
 
 ---
 
@@ -60,3 +60,5 @@ Grátis, sem conta. A transmissão acontece toda dentro da rede de casa, sem pre
 Para remover: **Definições → Aplicações → Aplicações instaladas → LanCast → Desinstalar**.
 
 **Bom saber:** o LanCast tem de estar **aberto na TV** e tudo no **mesmo Wi-Fi**. Se a imagem engasgar, escolhe **720p**. Quando o telemóvel **bloqueia**, o Android pára a partilha. O idioma segue o do aparelho, e no telemóvel e no PC também se escolhe na app.
+
+**Atualizações:** são automáticas. Sempre que as apps têm ligação à internet, procuram uma versão mais recente ao abrir e instalam-na sozinhas (nunca a meio de uma transmissão). No Android, deixa o LanCast *instalar apps desconhecidas* da primeira vez que pedir, e depois confirma cada atualização. As versões anteriores à 1.2.0 não se atualizam sozinhas: descarrega e instala outra vez uma vez. As definições mantêm-se.
